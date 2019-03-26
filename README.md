@@ -8,25 +8,22 @@ This is forked from [Platzi Flavored Markdown](https://github.com/PlatziDev/mark
 
 # Original Documentation
 
-## Platzi Flavored Markdown
-
-This is the markdown parser used in the Platzi education platform editor.
-
-This version of Markdown support the usual Github Flavored Markdown and Youtube videos, emojis, figure wrapping images, `<mark />` tags, underlines, abbr and definition lists.
+This version of Markdown support the usual Github Flavored Markdown and Youtube videos, emojis, figure wrapping images, `<mark />` tags, underlines, abbr, highlightjs and definition lists.
 
 ## How use it
 
 Install it with **npm**.
 
 ```bash
+npm i @danestves/markdown
 
-npm i -S @platzi/markdown
+yarn add @danestves/markdown
 ```
 
 Import it in your project.
 
 ```js
-import createParser from '@platzi/markdown';
+import createParser from '@danestves/markdown';
 ```
 
 And the use it.
