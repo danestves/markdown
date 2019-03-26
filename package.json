@@ -1,6 +1,6 @@
 {
   "name": "@danestves/markdown",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "@dan_estves markdown parser",
   "main": "index.js",
   "scripts": {

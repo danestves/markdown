@@ -1,7 +1,7 @@
 const createParser = require('./index.js');
 const math = require('markdown-it-math');
 
-const markdown = `![Daniel](https://www.danielestves.com/static/media/favicons/apple-touch-icon-1024x1024.png)
+const markdown = `![dan_estves](https://www.danielestves.com/static/media/favicons/favicon-32x32.png)
 
 *[HTML]: Hyper Text Markup Language
 *[W3C]:  World Wide Web Consortium
