@@ -1,4 +1,4 @@
-[![npm version](https://img.shields.io/npm/v/react-markdown.svg?style=flat-square)](https://www.npmjs.com/package/@danestves/markdown)[![Build Status](https://img.shields.io/travis/rexxars/react-markdown/master.svg?style=flat-square)](https://travis-ci.org/danestves/markdown)
+[![npm version](https://img.shields.io/npm/v/@danestves/markdown.svg?style=flat-square)](https://www.npmjs.com/package/@danestves/markdown)[![Build Status](https://img.shields.io/travis/danestves/markdown/master.svg?style=flat-square)](https://travis-ci.org/danestves/markdown)
 
 This is forked from [Platzi Flavored Markdown](https://github.com/PlatziDev/markdown)
 
