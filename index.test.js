@@ -1,7 +1,7 @@
-const createParser = require('./index.js')
-const math = require('markdown-it-math')
+const createParser = require('./index.js');
+const math = require('markdown-it-math');
 
-const markdown = `![Platzi Logo](https://static.platzi.com/static/images/logos/platzi@2x.png)
+const markdown = `![Daniel](https://www.danielestves.com/static/media/favicons/apple-touch-icon-1024x1024.png)
 
 *[HTML]: Hyper Text Markup Language
 *[W3C]:  World Wide Web Consortium
@@ -28,12 +28,10 @@ function greeting() {
 }
 \`\`\`
 
-@S[soundcloud](https://soundcloud.com/platziteam/la-historia-de-platzi)
-
 @[youtube](ajLJOhf-WdA)
 
-[platzi](http://platzi.com/)
-`
+[dan_estves](https://www.danielestves.com/)
+`;
 
 const markdownWithMath = `Pythagoran theorem is $$a^2 + b^2 = c^2$$.
 
@@ -41,31 +39,31 @@ Bayes theorem:
 
 $$$
 P(A | B) = (P(B | A)P(A)) / P(B)
-$$$`
+$$$`;
 
-describe('Platzi Flavored Markdown parser', () => {
+describe('dan_estves Markdown parser', () => {
   it('should work without arguments', () => {
-    expect(createParser()(markdown)).toMatchSnapshot()
-  })
+    expect(createParser()(markdown)).toMatchSnapshot();
+  });
 
   it('should have link with attr noopener', () => {
     const html = createParser()(markdown);
     expect(html.indexOf('rel="nofollow noopener"') !== -1).toBe(true);
-  })
+  });
 
   describe('Options test', () => {
     it('should work with options', () => {
       expect(
         createParser({
-          html: false,
+          html: false
         })(markdown)
-      ).toMatchSnapshot()
-    })
+      ).toMatchSnapshot();
+    });
 
     it('should break without an object as options', () => {
-      expect(() => createParser('fake options')).toThrowErrorMatchingSnapshot()
-    })
-  })
+      expect(() => createParser('fake options')).toThrowErrorMatchingSnapshot();
+    });
+  });
 
   describe('Extra plugins test', () => {
     it('should work with extra plugins', () => {
@@ -75,15 +73,17 @@ describe('Platzi Flavored Markdown parser', () => {
           [
             math,
             {
-              inlineOpen: '$$',
-            },
-          ],
+              inlineOpen: '$$'
+            }
+          ]
         ])(markdownWithMath)
-      ).toMatchSnapshot()
-    })
+      ).toMatchSnapshot();
+    });
 
     it('should break without an array as extra plugins', () => {
-      expect(() => createParser(undefined, 'fake extra plugins')).toThrowErrorMatchingSnapshot()
-    })
-  })
-})
+      expect(() =>
+        createParser(undefined, 'fake extra plugins')
+      ).toThrowErrorMatchingSnapshot();
+    });
+  });
+});
