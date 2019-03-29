@@ -28,9 +28,9 @@ exports[`dan_estves Markdown parser Options test should work with options 1`] = 
 <dd>Definition 2a</dd>
 <dd>Definition 2b</dd>
 </dl>
-<pre><code class=\\"hljs language-js\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">function</span> <span class=\\"hljs-title\\">greeting</span>(<span class=\\"hljs-params\\"></span>) </span>{
-	<span class=\\"hljs-keyword\\">return</span> <span class=\\"hljs-string\\">'hello world!'</span>;
-}
+<pre class=\\"language-js\\"><code class=\\"language-js\\"><span class=\\"token keyword\\">function</span> <span class=\\"token function\\">greeting</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>
+	<span class=\\"token keyword\\">return</span> <span class=\\"token string\\">'hello world!'</span><span class=\\"token punctuation\\">;</span>
+<span class=\\"token punctuation\\">}</span>
 </code></pre>
 <p><div class=\\"embed-responsive embed-responsive-16by9\\"><iframe class=\\"embed-responsive-item youtube-player\\" type=\\"text/html\\" width=\\"640\\" height=\\"390\\" src=\\"https://www.youtube.com/embed/ajLJOhf-WdA\\" frameborder=\\"0\\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></p>
 <p><a href=\\"https://www.danielestves.com/\\" target=\\"_blank\\" rel=\\"nofollow noopener\\">dan_estves</a></p>
@@ -54,9 +54,9 @@ exports[`dan_estves Markdown parser should work without arguments 1`] = `
 <dd>Definition 2a</dd>
 <dd>Definition 2b</dd>
 </dl>
-<pre><code class=\\"hljs language-js\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">function</span> <span class=\\"hljs-title\\">greeting</span>(<span class=\\"hljs-params\\"></span>) </span>{
-	<span class=\\"hljs-keyword\\">return</span> <span class=\\"hljs-string\\">'hello world!'</span>;
-}
+<pre class=\\"language-js\\"><code class=\\"language-js\\"><span class=\\"token keyword\\">function</span> <span class=\\"token function\\">greeting</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>
+	<span class=\\"token keyword\\">return</span> <span class=\\"token string\\">'hello world!'</span><span class=\\"token punctuation\\">;</span>
+<span class=\\"token punctuation\\">}</span>
 </code></pre>
 <p><div class=\\"embed-responsive embed-responsive-16by9\\"><iframe class=\\"embed-responsive-item youtube-player\\" type=\\"text/html\\" width=\\"640\\" height=\\"390\\" src=\\"https://www.youtube.com/embed/ajLJOhf-WdA\\" frameborder=\\"0\\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></p>
 <p><a href=\\"https://www.danielestves.com/\\" target=\\"_blank\\" rel=\\"nofollow noopener\\">dan_estves</a></p>

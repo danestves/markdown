@@ -7,7 +7,7 @@ const ins = require('markdown-it-ins');
 const abbr = require('markdown-it-abbr');
 const deflist = require('markdown-it-deflist');
 const video = require('markdown-it-video');
-const hightlight = require('markdown-it-highlightjs');
+const prism = require('markdown-it-prism');
 
 function createParser(_options, _extraPlugins) {
   // default options
@@ -64,7 +64,7 @@ function createParser(_options, _extraPlugins) {
   parser.use(abbr);
   parser.use(deflist);
   parser.use(video, options.video || {});
-  parser.use(hightlight);
+  parser.use(prism);
 
   function applyPlugin(extraPlugin) {
     if (Array.isArray(extraPlugin)) {
